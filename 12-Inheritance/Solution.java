@@ -31,7 +31,10 @@ class Student extends Person {
         int total = 0;
 
         for (int testScore : testScores) total += testScore;
-
+        /*
+         for(int i=0; i<testScores.length; i++  )
+            total += testScores[i];
+       */
         int avg = total / testScores.length;
 
         if (avg >= 90 && avg <= 100) return 'O';
